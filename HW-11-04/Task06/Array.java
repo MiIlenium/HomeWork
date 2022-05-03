@@ -2,10 +2,8 @@ package Task06;
 
 public class Array implements IMath{
 
-    int arr[] = {5,3,5,1};
-
     @Override
-    public int Max() {
+    public int Max(int arr[]) {
         int max = arr[0];
         for(int i = 0; i <=arr.length - 1; i++){
             if(arr[i] > max){
@@ -17,7 +15,7 @@ public class Array implements IMath{
     }
 
     @Override
-    public int Min() {
+    public int Min(int arr[]) {
         int min = arr[0];
         for(int i = 0; i <=arr.length - 1; i++){
             if(arr[i] < min){
@@ -28,7 +26,7 @@ public class Array implements IMath{
     }
 
     @Override
-    public float Avg() {
+    public float Avg(int arr[]) {
         int avg = 0;
         for(int i = 0; i < arr.length; i++){
             avg += arr[i];
